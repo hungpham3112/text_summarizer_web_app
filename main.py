@@ -1,11 +1,20 @@
 import streamlit as st
 from transformers import pipeline
 
-# Load the summarization pipeline with error handling
-try:
-    summarizer = pipeline("summarization")
-except Exception as e:
-    st.error(f"Error loading the summarization model: {e}")
+@st.cache_resource
+def load_model():
+    try:
+        # Load the summarization pipeline
+        summarizer = pipeline("summarization", model="facebook/bart-large-cnn", framework="pt")
+        return summarizer
+    except Exception as e:
+        st.error(f"Error loading the summarization model: {e}")
+        return None
+
+# Load the model outside of the main function to leverage caching
+summarizer = load_model()
+
+if summarizer is None:
     st.stop()
 
 # Streamlit app title
