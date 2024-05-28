@@ -38,8 +38,7 @@ The Text Summarizer App is a powerful tool designed to generate concise summarie
 
 To use the Text Summarizer App, simply follow the instructions provided in the video below:
 
-![Usage Instructions](https://github-production-user-asset-6210df.s3.amazonaws.com/75968004/334493496-6ddcf08a-348d-4341-94b4-c0d9fb9a7b55.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240528%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240528T161851Z&X-Amz-Expires=300&X-Amz-Signature=96fc6d4ee92b902760fec74c929de96707100e09c68be7c1cdd5e12fb83e43b7&X-Amz-SignedHeaders=host&actor_id=75968004&key_id=0&repo_id=805192755)
-
+![Usage Instructions](demo.gif)
 
 ## License 📜
 
