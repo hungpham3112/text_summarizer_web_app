@@ -1,7 +1,7 @@
 # Text Summarizer App 📄🔍
 
 ## Description
-The Text Summarizer App is a powerful tool designed to generate concise summaries of long texts. It leverages advanced natural language processing techniques to extract key information and present it in a clear, succinct manner. Ideal for users who need to quickly understand the main points of lengthy documents, articles, or reports.
+The Text Summarizer App is a powerful tool designed to generate concise summaries of long texts. It leverages the `bart-large-cnn` model, a transformer-based model, to extract key information and present it in a clear, succinct manner. Ideal for users who need to quickly understand the main points of lengthy documents, articles, or reports.
 
 ## Installation Instructions
 
@@ -38,7 +38,10 @@ The Text Summarizer App is a powerful tool designed to generate concise summarie
 
 To use the Text Summarizer App, simply follow the instructions provided in the video below:
 
-[![Usage Video](link_to_video)](link_to_video)
+<video width="600" controls>
+  <source src="./Media1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## License 📜
 
