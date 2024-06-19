@@ -2,6 +2,7 @@ import streamlit as st
 from model import load_model
 from utils import split_into_chunks
 
+
 # Streamlit app title and description
 st.title("Text Summarizer with Hugging Face Transformers")
 
@@ -36,8 +37,16 @@ with col2:
                     # Summarize each chunk
                     chunk_summaries = []
                     for chunk in chunks:
-                        summary = summarizer(chunk, max_length=500, min_length=30, do_sample=True, top_k=50, top_p=0.95, early_stopping=True)
-                        chunk_summaries.append(summary[0]['summary_text'])
+                        summary = summarizer(
+                            chunk,
+                            max_length=500,
+                            min_length=30,
+                            do_sample=True,
+                            top_k=50,
+                            top_p=0.95,
+                            early_stopping=True,
+                        )
+                        chunk_summaries.append(summary[0]["summary_text"])
 
                     # Combine chunk summaries into a final summary
                     final_summary = " ".join(chunk_summaries)
@@ -68,5 +77,5 @@ st.markdown(
     <p>Developed with ❤️  by hungpham3112</p>
     </div>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
