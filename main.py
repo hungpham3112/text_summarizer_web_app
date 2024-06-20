@@ -1,7 +1,7 @@
 import streamlit as st
+
 from model import load_model
 from utils import split_into_chunks
-
 
 # Streamlit app title and description
 st.title("Text Summarizer with Hugging Face Transformers")
